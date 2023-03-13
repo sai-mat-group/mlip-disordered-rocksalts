@@ -1,0 +1,9 @@
+ 
+ predict.x -- Predict/interpolate atomic energy.
+ ----------------------------------------------------------------------
+ Usage: predict.x <input-file> [<structure files>]
+ 
+ See the documentation or the source code for a description of the
+ input file format.  Structure files can either be listed in the
+ input file, or specified on the command line.
+ 
