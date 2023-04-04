@@ -1,0 +1,4 @@
+from pymatgen import Structure
+s = Structure.from_file("POSCAR")
+s.remove_species(["Li"])
+s.to(fmt="poscar", filename="POSCAR")
