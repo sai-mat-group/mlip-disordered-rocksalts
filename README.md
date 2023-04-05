@@ -1,5 +1,6 @@
 # mlp-disordered-rocksalts
-#MTP
-#GAP
-#SNAP
-#AENET
+This repository contains the density functional theory (DFT) calculated data, the trained machine-learned interatomic potentials (MLIPs) with the optimal set of hyperparameters, and sample jupyter notebooks used for training MLIPs, as part of the research manuscript, that is available on <a href="https://arxiv.org/abs/2304.01650" target="_blank">arXiv</a>. The manuscript is under review and we will update this README page with a DoI once it is published.
+
+The goal of the research project was to construct and evaluate five atom-centered MLIPs, including artificial neural network potential developed by atomic energy network (AENET), Gaussian approximation potential (GAP), spectral neighbor analysis potential (SNAP) and its quadratic extension (qSNAP), and moment tensor potential (MTP), for a 11-component Li-based disordered rocksalt chemical space. Compositions sampled were of the form LiTMO<sub>2</sub> and TMO<sub>2</sub>, where TM = Sc, Ti, V, Cr, Mn, Fe, Co, Ni, and/or Cu. A total of 10842 configurations were calculated using DFT, which formed both the training (90%) and test (10%) datasets.
+
+The jupyter notebooks in the root folder of the repository were used for training GAP, SNAP, qSNAP, and MTP. AENET training files are under the "Aenet" folder. The "DFT_data_10842" folder contains all 10842 initial configurations (POSCAR files) and the DFT-calculated, zipped OUTCAR file for each configuration. The "JSON_data_10842" folder contains json-readable format of the training (9757 configurations) and test (1085 configurations) datasets. The json files contain information of all structures, their energies and the atomic forces.
